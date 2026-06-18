@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodGo - Delicious Delivered</title>
+
+    <link rel="stylesheet" href="project.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+
+    <script src="project.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <span class="logo-text">FoodGo</span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#restaurants">Restaurants</a></li>
+                <li><a href="#how">How it Works</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button type="button" class="cart-btn">
+                    🛒 <span id="cart-count">0</span>
+                </button>
+                <button type="button" class="login-btn">Login</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+            <h1>Craving Something Delicious?</h1>
+
+            <p>
+                Order from your favorite restaurants and get it delivered fast!
+            </p>
+
+            <div class="search-bar">
+                <input type="text"
+                       id="search-input"
+                       placeholder="Search for food or restaurants...">
+
+                <button type="button" onclick="searchFood()">
+                    Search
+                </button>
+            </div>
+
+            <div class="hero-stats">
+                <div>500+ Restaurants</div>
+                <div>10k+ Happy Customers</div>
+                <div>30 min Avg Delivery</div>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <img src="all food.jpg" alt="Delicious food">
+        </div>
+
+    </section>
+
+    <!-- Categories -->
+    <section id="categories" class="categories">
+
+        <h2>Popular Categories</h2>
+
+        <div class="category-grid">
+
+            <div class="category-card"
+                 onclick="filterCategory('pizza')">
+                <img src="pizza.jpg" alt="Pizza">
+                <h3>Pizza</h3>
+            </div>
+
+            <div class="category-card"
+                 onclick="filterCategory('burger')">
+                <img src="burger.jpg" alt="Burger">
+                <h3>Burgers</h3>
+            </div>
+
+            <div class="category-card"
+                 onclick="filterCategory('asian')">
+                <img src="asian.jpg" alt="Asian">
+                <h3>Asian</h3>
+            </div>
+
+            <div class="category-card"
+                 onclick="filterCategory('dessert')">
+                <img src="desseert.jpg" alt="Dessert">
+                <h3>Desserts</h3>
+            </div>
+
+        </div>
+    </section>
+
+  
+    
+    <!-- How It Works -->
+    <section id="how" class="how-it-works">
+
+        <h2>How FoodGo Works</h2>
+
+        <div class="steps">
+
+            <div class="step">
+                <div class="step-number">1</div>
+                <h3>Browse</h3>
+                <p>Explore hundreds of restaurants and menus.</p>
+            </div>
+
+            <div class="step">
+                <div class="step-number">2</div>
+                <h3>Order</h3>
+                <p>Choose your favorites and customize.</p>
+            </div>
+
+            <div class="step">
+                <div class="step-number">3</div>
+                <h3>Track</h3>
+                <p>Real-time tracking from kitchen to door.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonial-slider" id="testimonial-slider"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+
+        <div class="footer-content">
+
+            <div class="footer-col">
+                <h3>FoodGo</h3>
+                <p>Your favorite meals, delivered fresh.</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p>support@foodgo.com</p>
+                <p>+91 98765 43210</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Download App</h4>
+                <button type="button" class="app-btn">
+                    Get on Play Store
+                </button>
+
+                <button type="button" class="app-btn">
+                    Get on App Store
+                </button>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 FoodGo. Made with ❤️ for my second sem project.</p>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
